@@ -1,0 +1,58 @@
+body {
+    font-family: 'EB Garamond', serif;
+    background-color: #fefdf9;
+    color: #111;
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    line-height: 1.6;
+}
+
+h1.site-title {
+    font-size: 2.75rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #111;
+    padding-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+a {
+    color: #222;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+
+a:hover {
+    color: #000;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+/* Kill hr lines if they’re sneaking in */
+hr {
+    display: none;
+}
+
+/* Kill bottom border if it's on the title */
+.site-title,
+header,
+h1 {
+    border: none !important;
+    border-bottom: none !important;
+}
+
+/* Kill pseudo-elements that might add decorative lines */
+.site-title::after,
+.site-title::before,
+h1::after,
+h1::before {
+    content: none !important;
+    display: none !important;
+}
